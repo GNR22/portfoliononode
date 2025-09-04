@@ -1,0 +1,270 @@
+/* ===== Global Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #121212;  /* Dark background */
+  color: #e0e0e0;             /* Light grey text */
+  padding: 1inch; /* Adds padding around the content */
+
+}
+
+a {
+  color: #bbbbbb;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+/* ===== HEADER ===== */
+.site-header {
+  background: #1c1c1c;
+  padding: 0.25rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 60px;
+  text-align: right;
+  color: #fff;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  justify-content: flex-end;
+}
+
+.nav a {
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.nav a:hover {
+  color: #ffcc00;      /* Change to any color you like */
+  text-decoration: underline; /* Optional: adds underline on hover */
+  transition: color 0.3s;
+}
+
+/* ===== INTRO SECTION ===== */
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  
+}
+
+#intro-title {
+    font-size: 35px;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    white-space: nowrap; /* This keeps it on one line */
+}
+
+/* <section class="intro" "firstparagraph" class*/
+.firstparagraph {
+    font-size: 30px;
+    color:white;
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.firstparagraph {
+  margin: 1rem 0;
+  color: #cccccc;
+}
+
+.button1 {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  padding: 10px 25px; /* Increase padding for bigger button */
+  border-radius: 500px;
+  margin-top: 1rem;
+  transition: background 0.3s;
+  
+}
+
+.button1:hover {
+  background: #555;
+}
+
+/* ===== PROFILE (inside intro) ===== */
+.profile {
+  padding: 2rem; /* Reduced from 1in to 2rem for better balance */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center image and caption horizontally */
+}
+
+.profile img {
+  width: 220px;      /* take full width of parent */
+  height: auto;  /* remove the size limit */
+  border: 3px solid #444;
+  display: block;
+}
+
+.profile figcaption {
+  text-align: center; /* Center caption under image */
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  color: #aaa;
+}
+
+/* ===== ABOUT SECTION ===== */
+#about {
+  margin: 3rem 0;
+  padding: 2rem 0;
+  border-top: 1px solid #333;
+}
+
+#about h2 {
+  font-size: 35px;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #444;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+#about p {
+  font-size: 30px;
+  margin: 1rem 0;
+  color: #cccccc;
+}
+
+a[href="https://github.com/GNR22"]:hover {
+  color: #ffcc00;           /* Example: purple on hover */
+  text-decoration: underline;
+  background: #222;         /* Optional: subtle background */
+  transition: color 0.3s, background 0.3s;
+}
+
+/* ===== PROJECTS SECTION ===== */
+#projects {
+  margin: 3rem 0;
+  padding: 2rem 0;
+  border-top: 1px solid #333;
+}
+
+#projects h2 {
+  font-size: 35px;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #444;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+#projects h3,p {
+  font-size: 30px;
+  margin-bottom: 0.5rem;
+  color: #cccccc;
+}
+
+#projects p {
+  font-size: 30px;
+  margin-bottom: 0.5rem;
+  color: #cccccc;
+}
+
+.project-list {
+  display: grid;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.project-img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  margin: 0.5rem 0;
+}
+
+/* ===== SKILLS SECTION ===== */
+#skills {
+  margin: 3rem 0;
+  padding: 2rem 0;
+  border-top: 1px solid #333;
+}
+
+#skills h2 {
+  font-size: 35px;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #444;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+#skills ul {
+  font-size: 30px;
+  list-style: square inside;
+  margin-top: 1rem;
+  color: #ccc;
+}
+
+#skills li {
+  margin-bottom: 0.5rem;
+}
+
+/* ===== CONTACT SECTION ===== */
+#contact {
+  margin: 3rem 0;
+  padding: 2rem 0;
+  border-top: 1px solid #333;
+}
+
+#contact h2 {
+  font-size: 35px;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #444;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+#contact address {
+  font-size: 30px;
+  margin-top: 1rem;
+  font-style: normal;
+  color: #ccc;
+}
+
+#contact address a {
+  color: #fff;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #1c1c1c;   /* Dark background */
+  color: #777;           /* Light gray text */
+  padding: 2rem 1rem;    /* Space inside footer */
+  text-align: center;    /* Center the text */
+  border-top: 1px solid #333; /* Divider line */
+  font-size: 0.9rem;     /* Slightly smaller text */
+}
