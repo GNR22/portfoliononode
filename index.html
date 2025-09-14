@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css"/>
+   
 </head>
 <body>
-    <a class ="skip-link" href="#content">Skip to main content</a>
+    <script src="script.js"></script>
     <header class="site-header">
         <div class="container">
             <h1 class="logo">Dhant Guenryan G. Ranada</h1>
             <nav aria-label="Primary">
                 <ul class="nav">
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -23,7 +25,7 @@
     </header>
     <main id="content">
         <!--Section tags here-->
-        <section class="intro" aria-lablledby="intro-title">
+        <section id="home" class="intro" aria-lablledby="intro-title">
             <div class="container">
             <div class="intro-grid">
             <div>
@@ -43,20 +45,20 @@
 
 <section id ="about" class="section" aria-labelledby="about-title">
     <div class="container">
-        <h2 id="about-title">About Me</h2>
+        <h2 id="about">About Me</h2>
         <p>
             I am Fresh graduate of BS information Technology, expertise includes web development and cybersecurity. Focused on keeping your systems up to date and safe and sound
         </p>
         <p>
             Im currently exploring the world of programming and web development, learning new skills and technologies to enhance my abilities. I am passionate about creating innovative solutions that make a difference in people's lives. 
-           <br><br>Github below👇<br><a href="https://github.com/GNR22" target="_blank" rel="noopener">Github</a>
+           <br><br> Github below👇<br><a href="https://github.com/GNR22" target="_blank" rel="noopener" class="github-link">Github</a>
         </p> 
     </div>
 </section>
 
 <section id="projects" class="section" aria-labelledby="projects-title">
     <div class="container">
-        <h2 id="projects-title">Projects</h2>
+        <h2 id="projects">Projects</h2>
         <div class="project-list">
             <article class="project">
                 <h3>Project A: Expense Tracker and Budget Tracker</h3>
@@ -67,7 +69,7 @@
 
 <section id="skills" class="section" aria-labelledby="skills-title">
     <div class="container">
-        <h2 id="skills-title">Skills</h2>
+        <h2 id="skills">Skills</h2>
        <ul>
             <li>HTML
             <li>CSS</li>
@@ -80,7 +82,7 @@
 
 <section id="contact" class="section" aria-labelledby="contact-title">
     <div class="container">
-        <h2 id ="contact-title">Contact Me</h2>
+        <h2 id ="contact">Contact Me</h2>
         <address>
             Email: <a href="mailto:gnr9512@gmail.com">gnr9512@gmail.com</a><br>
             Location: Butuan City, Philippines
@@ -93,3 +95,9 @@
     <p>&copy; 2025 Dhant Guenryan G. Ranada. All rights reserved.</p>
     </div>
 </footer>
+
+<button id="edit" onclick="toggleEdit(this)">Edit Sections</button>
+<button id="light-mode" onclick="toggleMode()">Switch to Light Mode</button>
+
+</body>
+</html>
