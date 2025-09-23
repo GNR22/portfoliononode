@@ -1,0 +1,2 @@
+package.json is the config file for your Node.js project. basically it stores the project details"
+When you run the "npm install" these usually are generated
